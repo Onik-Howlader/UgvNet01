@@ -1,13 +1,12 @@
 # UgvNet01
-
-
-
+----
 # UgvNet01: Deep Learning Model for Multi-Class Skin Disease Detection
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Accuracy](https://img.shields.io/badge/Validation_Accuracy-99.59%25-brightgreen?style=for-the-badge)]()
+[![Accuracy](https://img.shields.io/badge/Validation_Accuracy-99.59%25-brightgreen?style=for-the-badge)](https://github.com/Onik-Howlader/UgvNet01)
 
+---
 **UgvNet01** is an optimized, lightweight Convolutional Neural Network (CNN) architecture designed for automated, high-precision dermatological disease classification. It achieves a **99.59% validation accuracy** across 6 distinct skin condition categories.
 
 ---
