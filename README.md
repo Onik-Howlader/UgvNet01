@@ -42,18 +42,26 @@
 git clone [https://github.com/Onik-Howlader/UgvNet01.git](https://github.com/Onik-Howlader/UgvNet01.git)
 cd UgvNet01
 
-2. Load the pretrained Model in PyTorch
-  import torch
+### 2. Load the Pretrained Model via Hugging Face Hub
 
-# Load UgvNet01 Model
+```python
+import torch
+from huggingface_hub import hf_hub_download
+
+# Download weights from Hugging Face Hub
+model_path = hf_hub_download(
+    repo_id="Onik-Howlader/UgvNet01", 
+    filename="UgvNet01_best_model.pth"
+)
+
+# Initialize and load model weights
 model = UgvNet01(num_classes=6)
-model.load_state_dict(torch.load('UgvNet01_best_model.pth'))
+model.load_state_dict(torch.load(model_path))
 model.eval()
 
-print("UgvNet01 Model Loaded Successfully!")
+print(" UgvNet01 Model Loaded Successfully!")
 3. Repository Structure
-  ├── UgvNet01.ipynb           # Training Notebook
-├── UgvNet01_best_model.pth  # Pretrained Model Weights (99.59% Acc)
+├── UgvNet01.ipynb           # Training & Evaluation Notebook
 ├── README.md                # Project Documentation
 └── LICENSE                  # MIT License
 4. Citation & License
